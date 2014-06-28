@@ -1,10 +1,10 @@
 {
-  "name": "CHANGE THIS : Extension boilerplate",
+  "name": "Cortex",
   "version": "0.0.1",
   "manifest_version": 2,
-  "description": "This extension was created with the awesome extensionizr.com",
-  "homepage_url": "http://extensionizr.com",
-  "icons": {
+  "description": "The center of your internet",
+  "homepage_url": "http://jakesyl.github.io",
+  "icons": {//change these
     "16": "icons/icon16.png",
     "48": "icons/icon48.png",
     "128": "icons/icon128.png"
@@ -42,7 +42,7 @@
     "ftp://*/*"
   ],
   "omnibox": {
-    "keyword": "extensionizr"
+    "keyword": "Cortex"
   },
   "content_scripts": [
     {
