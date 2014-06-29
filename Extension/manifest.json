@@ -47,7 +47,7 @@
   "content_scripts": [
     {
       "matches": [
-        "https://www.google.com/*"
+        "http://*/*"
       ],
       "css": [
         "src/inject/inject.css"
