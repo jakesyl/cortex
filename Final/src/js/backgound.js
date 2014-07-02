@@ -1,11 +1,10 @@
 chrome.runtime.onMessage.addListener(function(message,sender,sendResponse){
-  // message.searchText is the text that was captured in the popup    
-  // Search/Highlight code goes here
-  //thanks so
+
 function searchText(){//finds a string in the text
   var search = ;//getting this from the document TODO define this later if the document is the search page then
+  var results = new Array();
   if(search){//if search === true
-    chrome.tabs.query({active:true,currentWindow:true},function(tabs){
+    chrome.tabs.query({active:true,currentWindow:true},function(tabs){//querying 
       chrome.tabs.executeScript(tabs[0].id,{file:search.js});
       chrome.tabs.sendMessage(tabs[0].id,{method:'search',searchText:search});
     });
