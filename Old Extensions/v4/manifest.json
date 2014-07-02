@@ -1,0 +1,39 @@
+{
+  "name": "Cortex",
+  "version": "0.01",
+  "manifest_version": 2,
+  "description": "An artificially intelligent application which contains nothing but pure awesomeness ",
+  "homepage_url": "jakesyl.github.io",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "default_locale": "en",
+  "background": {
+    "scripts": [
+      "src/jsbackground.js"
+    ],
+    "persistent": true
+  },
+  "permissions": [
+    "bookmarks",
+    "contentSettings",
+    "contextMenus",
+    "fileBrowserHandler",
+    "history",
+    "idle",
+    "management",
+    "notifications",
+    "tabs",
+    "http://*/*",
+    "https://*/*",
+    "ftp://*/*",
+  ],
+   "content_scripts": [ {
+      "exclude_globs": ["http://*.acidtests.org/*"],
+      "js": [ "src/js/jquery/jquery.min.js", "src/js/background.js", "src/js/jquery/replace.js"],
+      "matches": [ "\u003Call_urls>" ]
+    }
+  ]
+}
