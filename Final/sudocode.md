@@ -35,4 +35,4 @@ Function
 .identify common words in article
 | i.e words from article that match history weight 2
 .highlight links using replace text in jquery
-	replace thuing by that guy from clickable links
+	replace thing by that guy from clickable links
