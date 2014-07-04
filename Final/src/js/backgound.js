@@ -25,4 +25,3 @@ window.onload = function(){
 and jquery forum
 jakesyl: well, if you're using jquery, you should use its dom traversal functions also, that's part of the beauty of jquery is that it simplifies that interface for you so you can just do things like .parent().children().first().next().next().prev() etc to move around in the dom tree
 [23:20] <Velveeta> if you're gonna use references to things like .childNodes and .nextSibling, you might as well skip using jquery and just write it in vanilla js*/
-//
