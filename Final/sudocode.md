@@ -5,7 +5,7 @@ Purpose:
 Highlight urls on a users page that are found useful by an artificial intelligence algorithm in order to pave the way for more advanced ai systems and personal assistance
 
 Attributes:
-Portable (chrome)
+Portable (chrome)path 
 
 Extension inner workings:
 On page load:
